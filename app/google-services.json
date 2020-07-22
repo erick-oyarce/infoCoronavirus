@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "535228706996",
+    "firebase_url": "https://coronavi-6164c.firebaseio.com",
+    "project_id": "coronavi-6164c",
+    "storage_bucket": "coronavi-6164c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:535228706996:android:c3e24ae66d620ae88127e1",
+        "android_client_info": {
+          "package_name": "com.papasfritas.coronavirus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "535228706996-pvb0047t6t4foqaqcnv3qg117um0jk72.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdViNjQH5t7lAQWNAKcKhLJxD5BCCQwcE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "535228706996-pvb0047t6t4foqaqcnv3qg117um0jk72.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

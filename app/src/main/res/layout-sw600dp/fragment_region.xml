@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Activity.MainDatosRegionActivity">
+
+    <LinearLayout
+        android:id="@+id/linSelect"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/buscar"
+            android:background="@drawable/box_info"
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:paddingStart="3dp"
+            android:drawablePadding="10dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginTop="2dp"
+            android:hint="Buscar"
+            android:drawableStart="@drawable/ic_search"/>
+
+        <RelativeLayout
+            android:id="@+id/line_opcion2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/box_info"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Spinner
+                android:id="@+id/spinnerSelect"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="12dp"
+                android:backgroundTint="#000"
+                android:dropDownSelector="#000"
+                android:popupBackground="#ffffff"
+                android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:scrollbars="vertical"
+        android:layout_below="@id/linSelect"/>
+
+
+</RelativeLayout>
