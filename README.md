@@ -4,7 +4,7 @@ _Aplicación que permite mostrar información sobre la pandemia en Chile, mostra
 
 
 <p align="center">
-  <img src="img/general.jpg" width="350" title="General">
+  <img src="img/General.jpg" width="350" title="General">
 
   <img src="img/grafico.jpg" width="350" title="Gráfico de datos">
 
