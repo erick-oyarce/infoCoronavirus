@@ -1,9 +1,11 @@
 package com.papasfritas.coronavirus.Activity.Fragments;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -33,6 +35,7 @@ public class InfoFragment extends Fragment implements Callback<DataResponse> {
         // Required empty public constructor
     }
 
+   
     TextView confirmado, muertos, recuperados, fecha, nuevos, activos, nuevosMuertos, criticos, test;
     //ImageButton actualizar;
 
@@ -46,6 +49,7 @@ public class InfoFragment extends Fragment implements Callback<DataResponse> {
 
         init();
         peticionHttp();
+
         return view;
     }
     public void init(){
@@ -95,6 +99,8 @@ public class InfoFragment extends Fragment implements Callback<DataResponse> {
 
             //  consultaInfo();
 
+        }else{
+            Log.d("ERROR", String.valueOf(response.code()));
         }
     }
 

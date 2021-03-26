@@ -17,6 +17,7 @@ import com.papasfritas.coronavirus.Activity.Adapters.viewPagerAdapter;
 import com.papasfritas.coronavirus.Activity.Fragments.GraphFragment;
 import com.papasfritas.coronavirus.Activity.Fragments.InfoFragment;
 import com.papasfritas.coronavirus.Activity.Fragments.RegionFragment;
+import com.papasfritas.coronavirus.Activity.Fragments.WebFragment;
 import com.papasfritas.coronavirus.R;
 
 public class StartActivity extends AppCompatActivity {
@@ -48,6 +49,7 @@ public class StartActivity extends AppCompatActivity {
         viewPagerAdapter.addFragment(new InfoFragment(), "General");
         viewPagerAdapter.addFragment(new GraphFragment(), "Gráfico");
         viewPagerAdapter.addFragment(new RegionFragment(), "Región/Comuna");
+        viewPagerAdapter.addFragment(new WebFragment(), "Situación actual");
 
 
         viewPager.setAdapter(viewPagerAdapter);
